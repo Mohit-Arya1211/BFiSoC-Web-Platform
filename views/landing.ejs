@@ -34,8 +34,29 @@
                   <span class="nav-item__label">Back To Home Page</span>
                 </a>
               </li>
-
-             
+              <%if(user){%>
+              <li class="nav-item">
+                <a href="/auth/logout" data-type="page-transition">
+                  <span class="ms-btn">Logout</span>
+                  <span class="nav-item__label"></span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="/profile" data-type="page-transition">
+                  <span class="ms-btn">Profile</span>
+                  <span class="nav-item__label"></span>
+                </a>
+              </li>
+              <%}else{%>
+              <li class="nav-item">
+                <a href="/auth/github" data-type="page-transition">
+                  <span class="ms-btn">Login</span>
+                  <span class="nav-item__label">Back To Home Page</span>
+                </a>
+              </li>
+              <%}%>
+              
+    
               <li class="nav-item">
                 <a href="/about" data-type="page-transition">
                   <span class="ms-btn">About Us</span>
@@ -48,6 +69,7 @@
                   <span class="nav-item__label">Get in touch and Find Us</span>
                 </a>
               </li>
+            
             </ul>
           </div>
         </nav>
@@ -61,7 +83,7 @@
                 <div class="slide-inner--image" style="background-image: url('https://i.postimg.cc/vBdhNPMc/blue-hi-tech-abstract-loopable-footage-022759581-prevstill.jpg')"></div>
                 <div class="slide-inner--info">
                   <h1>Some Catchy <br>Stuff!</h1>
-                  <a href="/home" data-type="page-transition" class="ms-btn--slider">Get started</a>
+                  <a href="/auth/github" data-type="page-transition" class="ms-btn--slider">Get started</a>
                 </div>
               </div>
             </div>
@@ -72,7 +94,7 @@
                 </div>
                 <div class="slide-inner--info">
                   <h1>Some Catchy <br>Stuff!</h1>
-                  <a href="/home" data-type="page-transition" class="ms-btn--slider">take a look</a>
+                  <a href="/" data-type="page-transition" class="ms-btn--slider">take a look</a>
                 </div>
               </div>
             </div>
@@ -83,7 +105,7 @@
                 </div>
                 <div class="slide-inner--info">
                   <h1>Some Catchy <br>Stuff!</h1>
-                  <a href="/home" data-type="page-transition" class="ms-btn--slider">take a look</a>
+                  <a href="/" data-type="page-transition" class="ms-btn--slider">take a look</a>
                 </div>
               </div>
             </div>
@@ -94,7 +116,7 @@
                 </div>
                 <div class="slide-inner--info">
                   <h1>Some Catchy <br>Stuff!</h1>
-                  <a href="/home" data-type="page-transition" class="ms-btn--slider">take a look</a>
+                  <a href="/" data-type="page-transition" class="ms-btn--slider">take a look</a>
                 </div>
               </div>
             </div>

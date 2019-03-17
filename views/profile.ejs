@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="shortcut icon" href="https://i.postimg.cc/wBk2nXB2/oss.png" type="icon/png">
+    <title>BFISoC</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="assets/images/ico/favicon.png" />
+    <link rel="stylesheet" href="/css/Plugs.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <style>
+    body{
+        background: url("https://i.postimg.cc/vBdhNPMc/blue-hi-tech-abstract-loopable-footage-022759581-prevstill.jpg")
+    }
+    </style>
+</head>
+<body>
+    <div class="ms-main-container">
+        <div class="ms-preloader"></div>
+        <header class="ms-header navbar-white">
+          <nav class="ms-nav">
+            <div class="ms-logo">
+              <a href="index.html" data-type="page-transition">
+                <div class="logo-dark"><img src="logo-dark.svg" alt="logo image"></div>
+                <div class="logo-light current"><img src="https://i.postimg.cc/wBk2nXB2/oss.png" alt="logo image"></div>
+              </a>
+            </div>
+            <button class="hamburger" type="button" data-toggle="navigation">
+            <span class="hamburger-box">
+              <span class="hamburger-label">Menu</span>
+              <span class="hamburger-inner"></span>
+            </span>
+            </button>
+            <div class="height-full-viewport">
+              <ul class="ms-navbar">
+                <li class="nav-item">
+                  <a href="/" data-type="page-transition">
+                    <span class="ms-btn">Home</span>
+                    <span class="nav-item__label">Back To Home Page</span>
+                  </a>
+                </li>
+                <%if(user){%>
+                <li class="nav-item">
+                  <a href="/auth/logout" data-type="page-transition">
+                    <span class="ms-btn">Logout</span>
+                    <span class="nav-item__label"></span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="/profile" data-type="page-transition">
+                    <span class="ms-btn">Profile</span>
+                    <span class="nav-item__label"></span>
+                  </a>
+                </li>
+                <%}else{%>
+                <li class="nav-item">
+                  <a href="/auth/github" data-type="page-transition">
+                    <span class="ms-btn">Login</span>
+                    <span class="nav-item__label">Back To Home Page</span>
+                  </a>
+                </li>
+                <%}%>
+                
+      
+                <li class="nav-item">
+                  <a href="/about" data-type="page-transition">
+                    <span class="ms-btn">About Us</span>
+                    <span class="nav-item__label">Learn more about the Developers</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="/contact" data-type="page-transition">
+                    <span class="ms-btn">Contact</span>
+                    <span class="nav-item__label">Get in touch and Find Us</span>
+                  </a>
+                </li>
+              
+              </ul>
+            </div>
+          </nav>
+        </header>
+    
+    <main class="ms-container home-slider">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="slide-inner" data-swiper-parallax="45%">
+                <div class="overlay"></div>
+                <div class="slide-inner--image" style="background-image: url('https://i.postimg.cc/vBdhNPMc/blue-hi-tech-abstract-loopable-footage-022759581-prevstill.jpg')"></div>
+                <div class="slide-inner--info">
+                    <h1>Welcome to your profile,<%=user.username%></h1>
+                  
+                </div>
+              </div>
+            </div>
+    <script type="text/javascript" src='/js/J1.js'></script>
+    <script type="text/javascript" src='/js/J3.js'></script>
+    <script type="text/javascript" src="/js/J2.js"></script>
+</body>
+</html>
